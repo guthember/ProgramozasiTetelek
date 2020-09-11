@@ -13,12 +13,31 @@ namespace ProgramozasiTetelek
         static void Main(string[] args)
         {
             TombKiiras();
-            Osszegzes();
-            Megszamolas();
-            Eldontes();
-            Kivalasztas();
+            Osszegzes();   //1
+            Megszamolas(); //2
+            Eldontes();    //3
+            Kivalasztas(); //4
+            Kereses();     //5
 
             Console.ReadKey();
+        }
+
+        private static void Kereses()
+        {
+            Console.WriteLine("Keresés tétele");
+            int i = 0;
+            while (i < tomb.Length && tomb[i] != 50)
+            {
+                i++;
+            }
+            if (i < tomb.Length)
+            {
+                Console.WriteLine("Van benne, a {0}. indexen.", i );
+            }
+            else
+            {
+                Console.WriteLine("Nincs benne.");
+            }
         }
 
         private static void Kivalasztas()
