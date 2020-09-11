@@ -15,8 +15,29 @@ namespace ProgramozasiTetelek
             TombKiiras();
             Osszegzes();
             Megszamolas();
+            Eldontes();
 
             Console.ReadKey();
+        }
+
+        private static void Eldontes()
+        {
+            Console.WriteLine("Eldöntés tétele");
+            int i = 0;
+            while (i < tomb.Length && tomb[i] != 69)
+            {
+                i++;
+            }
+
+            if (i < tomb.Length)
+            {
+                Console.WriteLine("Van 69 a tömbben.");
+            }
+            else
+            {
+                Console.WriteLine("Nincs 69 a tömbben.");
+            }
+
         }
 
         private static void Megszamolas()
