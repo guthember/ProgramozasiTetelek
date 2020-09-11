@@ -18,8 +18,25 @@ namespace ProgramozasiTetelek
             Eldontes();    //3
             Kivalasztas(); //4
             Kereses();     //5
+            Maximum();     //6
 
             Console.ReadKey();
+        }
+
+        private static void Maximum()
+        {
+            Console.WriteLine("Maximum keresés");
+            int maxHely = 0;
+            for (int i = 1; i < tomb.Length; i++)
+            {
+                if( tomb[maxHely] < tomb[i])
+                {
+                    maxHely = i;
+                }
+            }
+
+            Console.WriteLine("A legnagyobb elem: {0}, a {1}, indexű helyen van.",
+                tomb[maxHely], maxHely);
         }
 
         private static void Kereses()

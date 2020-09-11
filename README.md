@@ -34,3 +34,7 @@
 ## Keresés (lineáris)
 - Kereses() metódus létrehozása
 - Van-e benne 50, és ha van hányadik?
+
+## Maximum keresés
+- Maximum() metódus létrehozása
+- Kiírni a legnagyobb elemet
