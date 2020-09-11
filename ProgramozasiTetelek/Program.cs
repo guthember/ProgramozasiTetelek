@@ -14,13 +14,28 @@ namespace ProgramozasiTetelek
         {
             TombKiiras();
             Osszegzes();
+            Megszamolas();
 
             Console.ReadKey();
         }
 
+        private static void Megszamolas()
+        {
+            Console.WriteLine("Megszámolás tétele");
+            int darab = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (tomb[i] % 3 == 0)
+                {
+                    darab++;
+                }
+            }
+            Console.WriteLine("A tömbben {0} darab 3-al osztható van.", darab);
+        }
+
         private static void Osszegzes()
         {
-            Console.WriteLine("Összegzés tétele");
+            Console.WriteLine("\nÖsszegzés tétele");
             int temp = 0;
             for (int i = 0; i < tomb.Length; i++)
             {

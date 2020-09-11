@@ -15,3 +15,8 @@
 - Osszegzes() metódus létrehozása
 - összegzés tétele a tömbön 
 - eredmény kiírása a console-ra
+
+## Megszámolás
+- Megszamolas() metódus létrehozása
+- Hány 3-al osztható elem van a tömbben
+- eredmémny kiírása a console-ra
