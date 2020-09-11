@@ -16,8 +16,21 @@ namespace ProgramozasiTetelek
             Osszegzes();
             Megszamolas();
             Eldontes();
+            Kivalasztas();
 
             Console.ReadKey();
+        }
+
+        private static void Kivalasztas()
+        {
+            Console.WriteLine("Kiválasztás tétele");
+            int i = 0;
+            while (tomb[i] != 50)
+            {
+                i++;
+            }
+
+            Console.WriteLine("A {0}. indexű helyen van.", i);
         }
 
         private static void Eldontes()
