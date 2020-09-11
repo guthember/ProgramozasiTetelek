@@ -13,8 +13,21 @@ namespace ProgramozasiTetelek
         static void Main(string[] args)
         {
             TombKiiras();
+            Osszegzes();
 
             Console.ReadKey();
+        }
+
+        private static void Osszegzes()
+        {
+            Console.WriteLine("Összegzés tétele");
+            int temp = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                // temp = temp + tomb[i];
+                temp += tomb[i];
+            }
+            Console.WriteLine("Az összeg: {0}",temp);
         }
 
         private static void TombKiiras()
